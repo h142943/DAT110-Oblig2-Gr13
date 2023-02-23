@@ -27,5 +27,4 @@ public abstract class Message {
 		return "Message [type=" + type + ", user=" + user + "]";
 	};
 	
-	
 }
