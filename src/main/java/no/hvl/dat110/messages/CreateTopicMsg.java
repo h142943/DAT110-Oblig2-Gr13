@@ -27,7 +27,7 @@ public class CreateTopicMsg extends Message {
 
 	@Override
 	public String toString() {
-		return "CreateTopicMsg [topic=" + topic + "]"; //autogenerert
+		return "CreateTopicMsg [topic=" + topic + "]";
 	}
 	
 }
