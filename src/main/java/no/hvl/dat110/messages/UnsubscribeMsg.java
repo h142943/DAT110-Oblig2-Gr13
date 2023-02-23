@@ -2,8 +2,8 @@ package no.hvl.dat110.messages;
 
 public class UnsubscribeMsg extends Message {
 
-	private String topic;
 	// message sent from client to unsubscribe on a topic 
+	private String topic;
 
     public UnsubscribeMsg(String user, String topic) {
     	super(MessageType.UNSUBSCRIBE, user);
