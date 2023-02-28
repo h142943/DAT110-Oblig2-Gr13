@@ -15,8 +15,7 @@ public class Storage {
 	protected ConcurrentHashMap<String, Set<String>> subscriptions;
 	
 	// data structure for managing currently connected clients
-	// maps from user to corresponding client session object
-	
+	// maps from user to corresponding client session object	
 	protected ConcurrentHashMap<String, ClientSession> clients;
 
 	public Storage() {
@@ -51,11 +50,10 @@ public class Storage {
 	}
 
 	public void addClientSession(String user, Connection connection) {
+		
 
 		// TODO: add corresponding client session to the storage
 		// See ClientSession class
-		
-		throw new UnsupportedOperationException(TODO.method());
 		
 	}
 
