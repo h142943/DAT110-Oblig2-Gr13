@@ -7,7 +7,7 @@ public class TemperatureDevice {
 
 	private static final int COUNT = 10;
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 
 		// simulated / virtual temperature sensor
 		TemperatureSensor sn = new TemperatureSensor();
@@ -19,7 +19,11 @@ public class TemperatureDevice {
 		// - publish the temperature(s)
 		for (int i=1; i<=COUNT; i++) {
 			client.publish("temperature", sn.read()+"");
-			Thread.sleep(1000);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 		
 		// - disconnect from the broker
