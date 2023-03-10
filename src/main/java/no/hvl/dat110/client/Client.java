@@ -4,6 +4,8 @@ import no.hvl.dat110.messages.*;
 import no.hvl.dat110.messagetransport.Connection;
 import no.hvl.dat110.messagetransport.MessagingClient;
 
+
+//client
 public class Client extends Thread {
 
 	private MessagingClient client;
